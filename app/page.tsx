@@ -175,7 +175,7 @@ export default function HomePage() {
         >
           <h2 className="text-3xl font-bold mb-4">Siap Berkendara Lebih Aman?</h2>
           <p className="text-white/80 mb-6 max-w-lg mx-auto">
-            Mulai gunakan Drive Save sekarang dan jadikan perjalanan Anda lebih aman.
+            Mulai gunakan Drive Safe sekarang dan jadikan perjalanan Anda lebih aman.
           </p>
           <Link href="/detection">
             <Button size="lg" variant="secondary">

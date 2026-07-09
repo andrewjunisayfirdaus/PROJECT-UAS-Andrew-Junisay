@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useCar } from "@/context/car-provider";
+import { useRouter } from "next/navigation";
 import {
   IconCar,
   IconEngine,
@@ -16,6 +17,7 @@ import {
 import { toast } from "sonner";
 
 export function CarConnection() {
+  const router = useRouter();
   const {
     isConnected,
     isSupported,
@@ -33,6 +35,7 @@ export function CarConnection() {
       return;
     }
 
+    router.push("/detection/face-monitor");
     try {
       await connect();
       if (!error) {

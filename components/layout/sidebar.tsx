@@ -78,7 +78,7 @@ export function Sidebar() {
             <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
               <IconShieldCheck size={20} className="text-white" />
             </div>
-            <span className="font-bold text-lg">Drive Save</span>
+            <span className="font-bold text-lg">Drive Safe</span>
           </Link>
         )}
         {collapsed && (

@@ -3,13 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { IconMoon, IconCamera, IconBell, IconAlertTriangle, IconAlarm } from "@tabler/icons-react";
+import { IconClock, IconCamera, IconAlertTriangle, IconAlarm } from "@tabler/icons-react";
 
 const tabs = [
-  { label: "Face Monitor", href: "/detection/face-monitor", icon: IconCamera },
   { label: "Smartwatch", href: "/detection/smartwatch", icon: IconAlarm },
-  { label: "Atur Waktu Tidur", href: "/detection/sleep-time", icon: IconMoon },
-  { label: "Voice Reminder", href: "/detection/voice-reminder", icon: IconBell },
+  { label: "Face Monitor", href: "/detection/face-monitor", icon: IconCamera },
+  { label: "Time for a Rest", href: "/detection/sleep-time", icon: IconClock },
   { label: "SOS", href: "/detection/sos", icon: IconAlertTriangle },
 ];
 

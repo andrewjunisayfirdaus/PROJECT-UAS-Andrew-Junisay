@@ -23,7 +23,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Drive Save",
+  title: "Drive Safe",
   description: "Sistem deteksi kantuk cerdas untuk keselamatan berkendara Anda",
 };
 
