@@ -3,11 +3,11 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { IconCalendarTime, IconBulb } from "@tabler/icons-react";
+import { IconBulb, IconBook } from "@tabler/icons-react";
 
 const tabs = [
-  { label: "Sleep Schedule", href: "/quest/sleep", icon: IconCalendarTime },
   { label: "Fakta Microsleep", href: "/quest/facts", icon: IconBulb },
+  { label: "Guide & Tips", href: "/quest/guide", icon: IconBook },
 ];
 
 export default function QuestLayout({ children }: { children: React.ReactNode }) {

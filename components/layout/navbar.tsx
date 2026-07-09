@@ -16,7 +16,6 @@ export function Navbar() {
     const titles: Record<string, string> = {
       detection: "Detection",
       "sleep-time": "Atur Waktu Tidur",
-      "fit-drive": "Fit-to-Drive Test",
       "face-monitor": "Face Monitor",
       "voice-reminder": "Voice Reminder",
       profile: "Profile",

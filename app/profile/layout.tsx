@@ -3,13 +3,10 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { IconUserCircle, IconAlertTriangle, IconAlarm, IconBook } from "@tabler/icons-react";
+import { IconUserCircle } from "@tabler/icons-react";
 
 const tabs = [
   { label: "Data Diri", href: "/profile/data", icon: IconUserCircle },
-  { label: "SOS", href: "/profile/sos", icon: IconAlertTriangle },
-  { label: "Smartwatch", href: "/profile/smartwatch", icon: IconAlarm },
-  { label: "Guide & Tips", href: "/profile/guide", icon: IconBook },
 ];
 
 export default function ProfileLayout({ children }: { children: React.ReactNode }) {

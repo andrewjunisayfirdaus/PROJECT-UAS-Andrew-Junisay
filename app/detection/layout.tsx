@@ -3,13 +3,14 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { IconMoon, IconCar, IconCamera, IconBell } from "@tabler/icons-react";
+import { IconMoon, IconCamera, IconBell, IconAlertTriangle, IconAlarm } from "@tabler/icons-react";
 
 const tabs = [
-  { label: "Atur Waktu Tidur", href: "/detection/sleep-time", icon: IconMoon },
-  { label: "Fit-to-Drive", href: "/detection/fit-drive", icon: IconCar },
   { label: "Face Monitor", href: "/detection/face-monitor", icon: IconCamera },
+  { label: "Smartwatch", href: "/detection/smartwatch", icon: IconAlarm },
+  { label: "Atur Waktu Tidur", href: "/detection/sleep-time", icon: IconMoon },
   { label: "Voice Reminder", href: "/detection/voice-reminder", icon: IconBell },
+  { label: "SOS", href: "/detection/sos", icon: IconAlertTriangle },
 ];
 
 export default function DetectionLayout({ children }: { children: React.ReactNode }) {

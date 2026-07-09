@@ -22,7 +22,7 @@ export default function DrowsyDrivingGuidePage() {
   ];
 
   const solutions = [
-    { title: "Berhenti dan Tidur", desc: "Tidur 15-20 menit是最有效的恢复方式", time: "20 menit", priority: "urgent" },
+    { title: "Berhenti dan Tidur", desc: "Tidur 15-20 menit adalah cara paling efektif memulihkan kewaspadaan", time: "20 menit", priority: "urgent" },
     { title: "Minum Kopi", desc: "Kafein butuh 30 menit untuk bereaksi. Minum 1-2 cangkir.", time: "30 menit", priority: "medium" },
     { title: "Ganti Pengemudi", desc: "Jika bepergian dengan orang lain, ganti pengemudi yang segar.", time: "segera", priority: "urgent" },
     { title: "Cari Udara Segar", desc: "Buka jendela atau keluar kendaraan sebentar.", time: "5 menit", priority: "low" },
@@ -52,13 +52,13 @@ export default function DrowsyDrivingGuidePage() {
         title="Bahaya Mengemudi Saat Mengantuk"
         description="Kenali tanda-tanda dan cara mengatasi kantuk saat berkendara"
         breadcrumbs={[
-          { label: "Profile", href: "/profile" },
-          { label: "Guide & Tips", href: "/profile/guide" },
+          { label: "Quest", href: "/quest" },
+          { label: "Guide & Tips", href: "/quest/guide" },
           { label: "Drowsy Driving" },
         ]}
       />
 
-      <Link href="/profile/guide">
+      <Link href="/quest/guide">
         <Button variant="ghost" size="sm" className="mb-6">
           <IconArrowLeft size={16} className="mr-2" />
           Kembali ke Guide

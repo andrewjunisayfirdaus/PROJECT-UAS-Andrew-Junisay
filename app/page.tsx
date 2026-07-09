@@ -6,26 +6,20 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
   IconMoon,
-  IconCar,
   IconCamera,
   IconBell,
-  IconChartBar,
   IconMap,
   IconHeartbeat,
-  IconDeviceGamepad,
   IconArrowRight,
   IconRocket,
 } from "@tabler/icons-react";
 
 const features = [
   { icon: IconMoon, title: "Atur Waktu Tidur", desc: "Monitor pola tidur Anda", href: "/detection/sleep-time", color: "text-blue-500" },
-  { icon: IconCar, title: "Fit-to-Drive Test", desc: "Uji kesiapan berkendara", href: "/detection/fit-drive", color: "text-green-500" },
   { icon: IconCamera, title: "Face Monitor", desc: "Deteksi wajah real-time", href: "/detection/face-monitor", color: "text-purple-500" },
   { icon: IconBell, title: "Voice Reminder", desc: "Pengingat cerdas", href: "/detection/voice-reminder", color: "text-yellow-500" },
-  { icon: IconChartBar, title: "Grafik Traffic", desc: "Analisis perjalanan", href: "/history/traffic", color: "text-orange-500" },
   { icon: IconMap, title: "Maps", desc: "Peta lokasi", href: "/history/maps", color: "text-cyan-500" },
-  { icon: IconHeartbeat, title: "Health", desc: "Monitor kesehatan", href: "/history/health", color: "text-red-500" },
-  { icon: IconDeviceGamepad, title: "Mini Games", desc: "Game seru & edukatif", href: "/quest/game", color: "text-pink-500" },
+  { icon: IconHeartbeat, title: "Smartwatch", desc: "Monitor kesehatan", href: "/detection/smartwatch", color: "text-red-500" },
 ];
 
 const stats = [
@@ -37,9 +31,9 @@ const stats = [
 
 const steps = [
   { num: 1, title: "Atur Jadwal Tidur", desc: "Tentukan waktu tidur dan bangun Anda" },
-  { num: 2, title: "Uji Kesiapan", desc: "Ambil Fit-to-Drive Test sebelum berkendara" },
-  { num: 3, title: "Monitor Wajah", desc: "Pantau status mata dan menguap saat mengemudi" },
-  { num: 4, title: "Terima Peringatan", desc: "Dapatkan notifikasi jika mengantuk" },
+  { num: 2, title: "Monitor Wajah", desc: "Pantau status mata dan menguap saat mengemudi" },
+  { num: 3, title: "Terima Peringatan", desc: "Dapatkan notifikasi jika mengantuk" },
+  { num: 4, title: "Lihat Riwayat", desc: "Pantau histori perjalanan Anda" },
 ];
 
 export default function HomePage() {
@@ -64,13 +58,13 @@ export default function HomePage() {
               Pantau pola tidur, uji kesiapan, dan dapatkan peringatan real-time.
             </p>
             <div className="flex flex-wrap gap-4 mt-8">
-              <Link href="/detection">
+              <Link href="/profile/data">
                 <Button size="lg" className="gradient-primary text-white">
                   <IconRocket size={18} className="mr-2" />
                   Mulai Deteksi
                 </Button>
               </Link>
-              <Link href="/profile/guide">
+              <Link href="/quest/guide">
                 <Button size="lg" variant="outline">
                   Pelajari Lebih Lanjut
                   <IconArrowRight size={18} className="ml-2" />

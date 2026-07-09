@@ -3,13 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { IconChartBar, IconMap, IconClock, IconHeartbeat } from "@tabler/icons-react";
+import { IconMap, IconCalendarTime, IconChartBar } from "@tabler/icons-react";
 
 const tabs = [
-  { label: "Grafik Traffic", href: "/history/traffic", icon: IconChartBar },
+  { label: "Sleep Schedule", href: "/history/sleep", icon: IconCalendarTime },
   { label: "Maps", href: "/history/maps", icon: IconMap },
-  { label: "Vulnerable Time", href: "/history/vulnerable", icon: IconClock },
-  { label: "Health", href: "/history/health", icon: IconHeartbeat },
+  { label: "Traffic & Vulnerable", href: "/history/traffic", icon: IconChartBar },
 ];
 
 export default function HistoryLayout({ children }: { children: React.ReactNode }) {

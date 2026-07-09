@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/context/theme-provider";
 import { SidebarProvider } from "@/context/sidebar-provider";
 import { BluetoothProvider } from "@/context/bluetooth-provider";
+import { CarProvider } from "@/context/car-provider";
 import { Sidebar } from "@/components/layout/sidebar";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
@@ -41,6 +42,7 @@ export default function RootLayout({
         <ThemeProvider>
           <SidebarProvider>
             <BluetoothProvider>
+            <CarProvider>
             <TooltipProvider>
               <div className="flex min-h-screen">
                 <Sidebar />
@@ -53,6 +55,7 @@ export default function RootLayout({
               <MobileNav />
               <Toaster position="top-right" richColors />
             </TooltipProvider>
+            </CarProvider>
             </BluetoothProvider>
           </SidebarProvider>
         </ThemeProvider>

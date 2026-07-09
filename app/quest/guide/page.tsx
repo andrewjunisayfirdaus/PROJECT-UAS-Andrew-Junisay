@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { PageHeader } from "@/components/shared/page-header";
@@ -13,7 +13,7 @@ const guidePages = [
     title: "Cara Menghindari Microsleep",
     description: "Pelajari penyebab dan cara mencegah microsleep saat berkendara",
     icon: <IconAlertTriangle size={24} className="text-yellow-500" />,
-    href: "/profile/guide/microsleep",
+    href: "/quest/guide/microsleep",
     category: "Safety",
     color: "from-yellow-500/20 to-yellow-500/5",
   },
@@ -22,7 +22,7 @@ const guidePages = [
     title: "Tips Berkendara Malam",
     description: "Panduan lengkap berkendara aman di malam hari",
     icon: <IconMoon size={24} className="text-indigo-500" />,
-    href: "/profile/guide/night-driving",
+    href: "/quest/guide/night-driving",
     category: "Tips",
     color: "from-indigo-500/20 to-indigo-500/5",
   },
@@ -31,7 +31,7 @@ const guidePages = [
     title: "Waktu Istirahat Ideal",
     description: "Panduan waktu istirahat untuk perjalanan jarak jauh",
     icon: <IconClock size={24} className="text-blue-500" />,
-    href: "/profile/guide/rest-time",
+    href: "/quest/guide/rest-time",
     category: "Health",
     color: "from-blue-500/20 to-blue-500/5",
   },
@@ -40,7 +40,7 @@ const guidePages = [
     title: "Bahaya Mengemudi Saat Mengantuk",
     description: "Kenali tanda-tanda dan cara mengatasi kantuk saat berkendara",
     icon: <IconBrain size={24} className="text-red-500" />,
-    href: "/profile/guide/drowsy-driving",
+    href: "/quest/guide/drowsy-driving",
     category: "Safety",
     color: "from-red-500/20 to-red-500/5",
   },
@@ -52,7 +52,7 @@ export default function GuidePage() {
       <PageHeader
         title="Guide & Tips"
         description="Panduan berkendara aman untuk Anda"
-        breadcrumbs={[{ label: "Profile", href: "/profile" }, { label: "Guide & Tips" }]}
+        breadcrumbs={[{ label: "Quest", href: "/quest" }, { label: "Guide & Tips" }]}
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

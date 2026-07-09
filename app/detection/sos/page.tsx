@@ -106,7 +106,7 @@ export default function SOSPage() {
       <PageHeader
         title="SOS"
         description="Hubungi layanan darurat dalam keadaan mendesak"
-        breadcrumbs={[{ label: "Profile", href: "/profile" }, { label: "SOS" }]}
+        breadcrumbs={[{ label: "Detection", href: "/detection" }, { label: "SOS" }]}
       />
 
       {sosActive && (

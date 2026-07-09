@@ -23,7 +23,7 @@ export default function NightDrivingGuidePage() {
     { title: "Gunakan Kaca Spion", desc: "Atur kaca spion anti-silau untuk mengurangi silau dari belakang", priority: "medium" },
     { title: "Istirahat Sebelum Lelah", desc: "Jangan menunggu sampai sangat mengantuk untuk berhenti", priority: "high" },
     { title: "Hindari Jam Kritis", desc: "Jangan mengemudi antara jam 02:00-05:00", priority: "high" },
-    { title: "Siapkan Hiburan", desc: "Musik atau podcast可以帮助tetap terjaga (tapi tetap fokus)", priority: "low" },
+    { title: "Siapkan Hiburan", desc: "Musik atau podcast membantu tetap terjaga (tapi tetap fokus)", priority: "low" },
   ];
 
   const checklist = [
@@ -43,13 +43,13 @@ export default function NightDrivingGuidePage() {
         title="Tips Berkendara Malam"
         description="Panduan lengkap berkendara aman di malam hari"
         breadcrumbs={[
-          { label: "Profile", href: "/profile" },
-          { label: "Guide & Tips", href: "/profile/guide" },
+          { label: "Quest", href: "/quest" },
+          { label: "Guide & Tips", href: "/quest/guide" },
           { label: "Night Driving" },
         ]}
       />
 
-      <Link href="/profile/guide">
+      <Link href="/quest/guide">
         <Button variant="ghost" size="sm" className="mb-6">
           <IconArrowLeft size={16} className="mr-2" />
           Kembali ke Guide

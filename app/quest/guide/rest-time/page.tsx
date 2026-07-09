@@ -43,13 +43,13 @@ export default function RestTimeGuidePage() {
         title="Waktu Istirahat Ideal"
         description="Panduan waktu istirahat untuk perjalanan jarak jauh"
         breadcrumbs={[
-          { label: "Profile", href: "/profile" },
-          { label: "Guide & Tips", href: "/profile/guide" },
+          { label: "Quest", href: "/quest" },
+          { label: "Guide & Tips", href: "/quest/guide" },
           { label: "Rest Time" },
         ]}
       />
 
-      <Link href="/profile/guide">
+      <Link href="/quest/guide">
         <Button variant="ghost" size="sm" className="mb-6">
           <IconArrowLeft size={16} className="mr-2" />
           Kembali ke Guide
